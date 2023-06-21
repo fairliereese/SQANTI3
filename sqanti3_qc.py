@@ -2382,6 +2382,8 @@ def main():
     parser.add_argument('--short_reads', help='\t\tFile Of File Names (fofn, space separated) with paths to FASTA or FASTQ from Short-Read RNA-Seq. If expression or coverage files are not provided, Kallisto (just for pair-end data) and STAR, respectively, will be run to calculate them.', required=False)
     parser.add_argument('--SR_bam' , help='\t\t Directory or fofn file with the sorted bam files of Short Reads RNA-Seq mapped against the genome', required=False)
     parser.add_argument('--isoform_hits' , help='\t\t Report all FSM/ISM isoform hits in a separate file', required=False, default = False, action='store_true')
+    parser.add_argument('--cupcake_path', help='\t\t Directory where cDNA Cupcake is installed', default=None)
+
 
     args = parser.parse_args()
 
